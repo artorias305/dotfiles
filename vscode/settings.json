@@ -1,0 +1,93 @@
+{
+  "console-ninja.featureSet": "Community",
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.inlineSuggest.enabled": true,
+  "explorer.compactFolders": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "chatgpt.lang": "en",
+  "editor.fontFamily": "Dank Mono",
+  "editor.fontSize": 16,
+  "editor.lineHeight": 1.42857,
+  "editor.renderLineHighlight": "gutter",
+  "editor.fontLigatures": true,
+  "editor.semanticHighlighting.enabled": false,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "breadcrumbs.enabled": false,
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.labelFormat": "short",
+  "terminal.integrated.fontFamily": "CaskaydiaCove NFM",
+  "workbench.statusBar.visible": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "window.titleBarStyle": "custom",
+  "window.commandCenter": false,
+  "window.title": "${dirty}${rootName}${separator}${activeEditorShort}",
+  "workbench.layoutControl.enabled": false,
+  "vsicons.dontShowNewVersionMessage": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.linkedEditing": true,
+  "console-ninja.warnOnNoToolsDetected": false,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "workbench.productIconTheme": "icons-carbon",
+  "workbench.iconTheme": "chalice-icon-theme",
+  "workbench.colorTheme": "Vesper",
+  "workbench.colorCustomizations": {
+    "editorGutter.addedBackground": "#A0A0A0",
+    "editorGutter.deletedBackground": "#A0A0A0",
+    "editorGutter.modifiedBackground": "#A0A0A0"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      // remove peppermint flavor
+      {
+        "name": "String, Symbols, Inherited Class",
+        "scope": [
+          "string",
+          "constant.other.symbol",
+          "constant.other.key",
+          "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+        ],
+        "settings": {
+          "foreground": "#A0A0A0"
+        }
+      },
+      {
+        "name": "CSS ID's",
+        "scope": [
+          "source.sass keyword.control",
+          "meta.attribute-selector.scss"
+        ],
+        "settings": {
+          "foreground": "#ffffff"
+        }
+      },
+      {
+        "name": "Inserted",
+        "scope": ["markup.inserted"],
+        "settings": {
+          "foreground": "#ffffff"
+        }
+      }
+    ]
+  },
+  "animations.Install-Method": "Apc Customize UI++",
+  "apc.imports": [
+    "file:///c:/Users/PC/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
+  ],
+  "apc.font.family": "Geist Mono",
+  "cmake.showOptionsMovedNotification": false,
+  "code-runner.runInTerminal": true,
+  "python.createEnvironment.trigger": "off",
+  "animations.Enabled": true,
+  "glassit.alpha": 255,
+  "symbols.hidesExplorerArrows": false,
+  "terminal.integrated.env.windows": {}
+}
