@@ -4,7 +4,8 @@ Invoke-Expression (& { (zoxide init powershell | Out-String) })
 
 Import-Module posh-git
 $omp_config = Join-Path $PSScriptRoot ".\takuya.omp.json"
-oh-my-posh --init --shell pwsh --config $omp_config | Invoke-Expression
+# oh-my-posh --init --shell pwsh --config $omp_config | Invoke-Expression
+oh-my-posh --init --shell pwsh --config "C:\Users\PC\Documents\Powershell\amro.omp.json" | Invoke-Expression
 
 Import-Module -Name Terminal-Icons
 
@@ -28,6 +29,8 @@ Set-Alias g git
 Set-Alias grep findstr
 Set-Alias tig 'C:\Program Files\Git\usr\bin\tig.exe'
 Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
+Set-Alias ll dir
+Set-Alias touch ni
 
 # Utilities
 function which ($command) {
