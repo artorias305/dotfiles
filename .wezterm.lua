@@ -17,13 +17,22 @@ config.term = "xterm-256color" -- Set the terminal type
 
 -- config.font = wezterm.font("Iosevka Custom")
 -- config.font = wezterm.font("Monocraft Nerd Font")
-config.font = wezterm.font("FiraCode Nerd Font Mono")
--- config.font = wezterm.font("JetBrains Mono Regular")
+-- config.font = wezterm.font("FiraCode Nerd Font")
+-- config.font = wezterm.font("Hack Nerd Font Mono")
+config.font = wezterm.font("JetBrains Mono Regular")
 config.cell_width = 0.9
-
+-- config.font = wezterm.font("Menlo Regular")
+-- config.font = wezterm.font("Hasklig")
+-- config.font = wezterm.font("Monoid Retina")
+-- config.font = wezterm.font("InputMonoNarrow")
+-- config.font = wezterm.font("mononoki Regular")
+-- config.font = wezterm.font("Iosevka")
+-- config.font = wezterm.font("M+ 1m")
+-- config.font = wezterm.font("Hack Regular")
+-- config.cell_width = 0.9
 config.window_background_opacity = 0.9
 config.prefer_egl = true
-config.font_size = 15.0
+config.font_size = 14.0
 
 config.window_padding = {
 	left = 0,
