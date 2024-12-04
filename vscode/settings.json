@@ -16,27 +16,26 @@
   "[prisma]": {
     "editor.formatOnSave": true
   },
-  "[python]": {
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.formatOnType": true,
-    "editor.wordBasedSuggestions": "off",
-    "gitlens.codeLens.symbolScopes": ["!Module"],
-    "editor.defaultFormatter": "ms-python.black-formatter"
-  },
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer",
     "editor.formatOnSave": true
   },
-  "apc.electron": {
-    "frame": false,
-    "titleBarStyle": "hidden"
-  },
-  "apc.font.family": "JetBrainsMono NF",
+  "apc.font.family": "Geist Mono",
   "apc.header": {
     "height": 36
   },
   "apc.listRow": {
     "height": 24
+  },
+  "apc.stylesheet": {
+    ".editor-actions": "display: none",
+    ".monaco-list-row": "border-radius: 4px;",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;",
+    ".nosidebar .inline-tabs-placeholder": "width: 75px",
+    ".pane-body": "padding: 8px",
+    ".pane-header": "padding: 0 8px",
+    ".split-view-view:first-child .pane-header": "display: none !important;",
+    ".title-label > h2": "display: none"
   },
   "breadcrumbs.enabled": false,
   "code-runner.runInTerminal": true,
@@ -67,7 +66,7 @@
     "source.fixAll.eslint": "explicit"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.fontFamily": "JetBrainsMono Nerd Font, monospace",
+  "editor.fontFamily": "JetBrainsMono NF",
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
   "editor.formatOnSave": true,
@@ -75,17 +74,11 @@
   "editor.inlineSuggest.enabled": true,
   "editor.linkedEditing": true,
   "editor.lineHeight": 1.42857,
-  "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
   "editor.parameterHints.enabled": false,
-  "editor.guides.indentation": true,
   "editor.renderLineHighlight": "gutter",
-  "editor.smoothScrolling": true,
   "editor.scrollbar.vertical": "hidden",
   "editor.semanticHighlighting.enabled": false,
-  "editor.semanticTokenColorCustomizations": {
-    "enabled": true
-  },
   "editor.stickyScroll.enabled": false,
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
@@ -115,7 +108,9 @@
       },
       {
         "name": "Inserted",
-        "scope": ["markup.inserted"],
+        "scope": [
+          "markup.inserted"
+        ],
         "settings": {
           "foreground": "#ffffff"
         }
@@ -131,7 +126,11 @@
   "emmet.syntaxProfiles": {
     "javascript": "jsx"
   },
-  "eslint.validate": ["javascript", "javascriptreact", "graphql"],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "graphql"
+  ],
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -158,16 +157,13 @@
     "**/CVS": true,
     ".vscode": true
   },
+  "fonted.font": "Inter 24pt 24pt",
   "git.enableSmartCommit": true,
   "git.openRepositoryInParentFolders": "always",
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.recentChange.enabled": false,
   "javascript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "Lua.format.defaultConfig": {
-    "indent_style": "space",
-    "indent_size": "2"
-  },
   "symbols.files.associations": {
     "*.e2e-spec.ts": "ts-test",
     "*.guard.ts": "typescript",
@@ -182,7 +178,10 @@
   },
   "symbols.hidesExplorerArrows": false,
   "tailwindCSS.experimental.classRegex": [
-    ["tv\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    [
+      "tv\\(([^)]*)\\)",
+      "[\"'`]([^\"'`]*).*?[\"'`]"
+    ],
     "class:\\s*?[\"'`]([^\"'`]*).*?,"
   ],
   "terminal.integrated.defaultProfile.osx": "fish",
@@ -206,24 +205,45 @@
   ],
   "window.commandCenter": false,
   "window.menuBarVisibility": "toggle",
-  "workbench.activityBar.location": "bottom",
+  "workbench.activityBar.location": "hidden",
   "workbench.colorCustomizations": {
     "editorGutter.addedBackground": "#A0A0A0",
     "editorGutter.deletedBackground": "#A0A0A0",
-    "editorGutter.modifiedBackground": "#A0A0A0",
-    "terminal.background": "#00000000"
+    "editorGutter.modifiedBackground": "#A0A0A0"
   },
-  "workbench.colorTheme": "Minimal",
+  "workbench.colorTheme": "Tokyo Night Moon NVim",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.labelFormat": "short",
-  "workbench.iconTheme": "moxer-icons",
+  "workbench.iconTheme": "eq-material-theme-icons-light",
+  "workbench.layoutControl.enabled": false,
   "workbench.productIconTheme": "fluent-icons",
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": false,
   "workbench.tree.enableStickyScroll": false,
   "security.workspace.trust.untrustedFiles": "open",
-  "cmake.showOptionsMovedNotification": false,
-  "workbench.settings.applyToAllProfiles": ["workbench.colorCustomizations"],
-  "window.titleBarStyle": "custom",
-  "python.createEnvironment.trigger": "off"
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Ubuntu (WSL)": {
+      "path": "C:\\WINDOWS\\System32\\wsl.exe",
+      "args": [
+        "-d",
+        "Ubuntu"
+      ]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
 }
