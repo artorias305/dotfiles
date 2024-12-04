@@ -29,7 +29,6 @@ function ll {
     eza -l -g --icons
 }
 
-
 # Utilities
 function which ($command) {
   Get-Command -Name $command -ErrorAction SilentlyContinue |
