@@ -5,5 +5,16 @@
 ## Contents
 
 - vim (neovim) config
-- PowerShellConfig
+- PowerShell config
 - WezTerm config
+- Starship config
+- Windows terminal config
+- vscode config
+
+## Apps i use
+
+- neovim
+- wezterm
+- yazi
+- lazygit
+- vscode (dropping it for neovim)
