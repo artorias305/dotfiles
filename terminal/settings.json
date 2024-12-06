@@ -48,14 +48,14 @@
         "defaults": 
         {
             "adjustIndistinguishableColors": "always",
-            "colorScheme": "Dark+",
+            "colorScheme": "GruvboxDark",
             "font": 
             {
                 "face": "JetBrainsMono Nerd Font",
                 "size": 12
             },
-            "opacity": 80,
-            "useAcrylic": true
+            "opacity": 95,
+            "useAcrylic": false
         },
         "list": 
         [
@@ -90,12 +90,6 @@
                 "source": "Git"
             },
             {
-                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
-                "hidden": false,
-                "name": "Ubuntu",
-                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
-            },
-            {
                 "guid": "{ac546a74-c71d-5c64-bb04-cde7662701c8}",
                 "hidden": false,
                 "name": "Developer Command Prompt for VS 2022",
@@ -111,6 +105,29 @@
     },
     "schemes": 
     [
+        {
+            "background": "#282828",
+            "black": "#282828",
+            "blue": "#458588",
+            "brightBlack": "#928374",
+            "brightBlue": "#83A598",
+            "brightCyan": "#8EC07C",
+            "brightGreen": "#B8BB26",
+            "brightPurple": "#D3869B",
+            "brightRed": "#FB4934",
+            "brightWhite": "#EBDBB2",
+            "brightYellow": "#FABD2F",
+            "cursorColor": "#EBDBB2",
+            "cyan": "#689D6A",
+            "foreground": "#EBDBB2",
+            "green": "#98971A",
+            "name": "GruvboxDark",
+            "purple": "#B16286",
+            "red": "#CC241D",
+            "selectionBackground": "#665C54",
+            "white": "#A89984",
+            "yellow": "#D79921"
+        },
         {
             "background": "#1B1E28",
             "black": "#1B1E28",
