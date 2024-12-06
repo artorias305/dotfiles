@@ -8,6 +8,7 @@ $ConfigPaths = @{
     "starship"     = "$env:USERPROFILE\.config\starship.toml"
     "vscode"       = "$env:APPDATA\Code\User\settings.json"
     "terminal"     = "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState"
+    "wezterm"      = "$env:USERPROFILE\.wezterm.lua"
 }
 
 # Function to copy configuration files or folders
