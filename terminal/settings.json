@@ -48,14 +48,15 @@
         "defaults": 
         {
             "adjustIndistinguishableColors": "always",
-            "colorScheme": "GruvboxDark",
+            "colorScheme": "Dark+",
+            "cursorShape": "bar",
             "font": 
             {
                 "face": "JetBrainsMono Nerd Font",
                 "size": 12
             },
-            "opacity": 95,
-            "useAcrylic": false
+            "opacity": 85,
+            "useAcrylic": true
         },
         "list": 
         [
@@ -173,6 +174,29 @@
             "selectionBackground": "#2D3F76",
             "white": "#828BB8",
             "yellow": "#FFC777"
+        },
+        {
+            "background": "#000000",
+            "black": "#000000",
+            "blue": "#5555CC",
+            "brightBlack": "#555555",
+            "brightBlue": "#5555FF",
+            "brightCyan": "#55FFFF",
+            "brightGreen": "#55FF55",
+            "brightPurple": "#FF55FF",
+            "brightRed": "#FF5555",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFFF55",
+            "cursorColor": "#53AE71",
+            "cyan": "#7ACACA",
+            "foreground": "#B3B3B3",
+            "green": "#55CC55",
+            "name": "Wez",
+            "purple": "#CC55CC",
+            "red": "#CC5555",
+            "selectionBackground": "#4D52F8",
+            "white": "#CCCCCC",
+            "yellow": "#CDCD55"
         }
     ],
     "showTabsInTitlebar": false,
