@@ -1,0 +1,322 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": 
+    [
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "paste",
+            "id": "User.paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": "find",
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "id": "User.splitPane.A6751878",
+            "keys": "alt+shift+d"
+        }
+    ],
+    "alwaysShowTabs": false,
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "colorScheme": "Warp Dark",
+            "font": 
+            {
+                "face": "JetBrainsMono Nerd Font"
+            },
+            "opacity": 85,
+            "useAcrylic": false
+        },
+        "list": 
+        [
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
+            },
+            {
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": false,
+                "name": "PowerShell",
+                "source": "Windows.Terminal.PowershellCore"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": true,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "hidden": false,
+                "name": "Git Bash",
+                "source": "Git"
+            },
+            {
+                "guid": "{719e7882-2f8c-5091-8c48-73a4e336c57b}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{72e9fc3f-c76b-5c81-aa36-849c56101ba7}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{8060dddf-87a1-51f5-9df0-ca14abc5fa54}",
+                "hidden": true,
+                "name": "Developer Command Prompt for VS 2019",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{cfe3c897-3b2f-5df5-be4e-3db08926f55b}",
+                "hidden": true,
+                "name": "Developer PowerShell for VS 2019",
+                "source": "Windows.Terminal.VisualStudio"
+            }
+        ]
+    },
+    "schemes": 
+    [
+        {
+            "background": "#1E1E2E",
+            "black": "#45475A",
+            "blue": "#89B4FA",
+            "brightBlack": "#585B70",
+            "brightBlue": "#89B4FA",
+            "brightCyan": "#94E2D5",
+            "brightGreen": "#A6E3A1",
+            "brightPurple": "#F5C2E7",
+            "brightRed": "#F38BA8",
+            "brightWhite": "#A6ADC8",
+            "brightYellow": "#F9E2AF",
+            "cursorColor": "#F5E0DC",
+            "cyan": "#94E2D5",
+            "foreground": "#CDD6F4",
+            "green": "#A6E3A1",
+            "name": "Catppuccin Mocha",
+            "purple": "#F5C2E7",
+            "red": "#F38BA8",
+            "selectionBackground": "#585B70",
+            "white": "#BAC2DE",
+            "yellow": "#F9E2AF"
+        },
+        {
+            "background": "#212121",
+            "black": "#000000",
+            "blue": "#82AAFF",
+            "brightBlack": "#545454",
+            "brightBlue": "#82AAFF",
+            "brightCyan": "#89DDFF",
+            "brightGreen": "#C3E88D",
+            "brightPurple": "#C792EA",
+            "brightRed": "#F07178",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFCB6B",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#89DDFF",
+            "foreground": "#EEFFFF",
+            "green": "#C3E88D",
+            "name": "Material Darker",
+            "purple": "#C792EA",
+            "red": "#F07178",
+            "selectionBackground": "#FFFFFF",
+            "white": "#FFFFFF",
+            "yellow": "#FFCB6B"
+        },
+        {
+            "background": "#2B2D3A",
+            "black": "#181A1C",
+            "blue": "#6DCAE8",
+            "brightBlack": "#2B2D3A",
+            "brightBlue": "#6DCAE8",
+            "brightCyan": "#F89860",
+            "brightGreen": "#9ED06C",
+            "brightPurple": "#BB97EE",
+            "brightRed": "#FB617E",
+            "brightWhite": "#E1E3E4",
+            "brightYellow": "#EDC763",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#F89860",
+            "foreground": "#E1E3E4",
+            "green": "#9ED06C",
+            "name": "Sonokai Andromeda",
+            "purple": "#BB97EE",
+            "red": "#FB617E",
+            "selectionBackground": "#FFFFFF",
+            "white": "#E1E3E4",
+            "yellow": "#EDC763"
+        },
+        {
+            "background": "#101010",
+            "black": "#101010",
+            "blue": "#ACA1CE",
+            "brightBlack": "#282828",
+            "brightBlue": "#B9AEDA",
+            "brightCyan": "#A0A0A0",
+            "brightGreen": "#99FFE4",
+            "brightPurple": "#ECAAD6",
+            "brightRed": "#FF8080",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFC799",
+            "cursorColor": "#AEAFAD",
+            "cyan": "#FFFFFF",
+            "foreground": "#FFFFFF",
+            "green": "#8FB99F",
+            "name": "Vesper",
+            "purple": "#E29ECA",
+            "red": "#F5A191",
+            "selectionBackground": "#323232",
+            "white": "#A0A0A0",
+            "yellow": "#E6B99D"
+        },
+        {
+            "background": "#181818",
+            "black": "#181818",
+            "blue": "#7CAFC2",
+            "brightBlack": "#585858",
+            "brightBlue": "#7CAFC2",
+            "brightCyan": "#86C1B9",
+            "brightGreen": "#A1B56C",
+            "brightPurple": "#BA8BAF",
+            "brightRed": "#AB4642",
+            "brightWhite": "#F8F8F8",
+            "brightYellow": "#F7CA88",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#86C1B9",
+            "foreground": "#D8D8D8",
+            "green": "#A1B56C",
+            "name": "Warp Dark",
+            "purple": "#BA8BAF",
+            "red": "#AB4642",
+            "selectionBackground": "#FFFFFF",
+            "white": "#D8D8D8",
+            "yellow": "#F7CA88"
+        },
+        {
+            "background": "#1A1A1A",
+            "black": "#121212",
+            "blue": "#2B4FFF",
+            "brightBlack": "#666666",
+            "brightBlue": "#5C78FF",
+            "brightCyan": "#5AC8FF",
+            "brightGreen": "#905AFF",
+            "brightPurple": "#5EA2FF",
+            "brightRed": "#BA5AFF",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#685AFF",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#28B9FF",
+            "foreground": "#F1F1F1",
+            "green": "#7129FF",
+            "name": "xcad",
+            "purple": "#2883FF",
+            "red": "#A52AFF",
+            "selectionBackground": "#FFFFFF",
+            "white": "#F1F1F1",
+            "yellow": "#3D2AFF"
+        }
+    ],
+    "showTabsInTitlebar": false,
+    "themes": 
+    [
+        {
+            "name": "Catppuccin Mocha",
+            "tab": 
+            {
+                "background": "#1E1E2EFF",
+                "iconStyle": "default",
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "tabRow": 
+            {
+                "background": "#181825FF",
+                "unfocusedBackground": "#11111BFF"
+            },
+            "window": 
+            {
+                "applicationTheme": "dark",
+                "experimental.rainbowFrame": false,
+                "frame": null,
+                "unfocusedFrame": null,
+                "useMica": false
+            }
+        },
+        {
+            "name": "Vesper",
+            "tab": 
+            {
+                "background": "#202020FF",
+                "iconStyle": "default",
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "tabRow": 
+            {
+                "background": "#101010FF",
+                "unfocusedBackground": "#101010FF"
+            },
+            "window": 
+            {
+                "applicationTheme": "dark",
+                "experimental.rainbowFrame": false,
+                "frame": null,
+                "unfocusedFrame": null,
+                "useMica": false
+            }
+        },
+        {
+            "name": "Warp Dark"
+        }
+    ]
+}
