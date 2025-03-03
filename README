@@ -2,5 +2,6 @@ configs included:
   - ghostty
   - nvim
   - zathura
+  - tmux
 
 i am running cachyos with hyprland, the config for those are pre-made and all default
