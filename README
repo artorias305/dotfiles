@@ -1,0 +1,6 @@
+configs included:
+  - ghostty
+  - nvim
+  - zathura
+
+i am running cachyos with hyprland, the config for those are pre-made and all default
