@@ -9,6 +9,12 @@ return {
       "nvim-treesitter/nvim-treesitter",
       "nvim-tree/nvim-web-devicons",
     },
+    ft = { "markdown", "tex", "html" },
+    config = function()
+      require("markview").setup({
+        latex = true,
+      })
+    end,
   },
   {
     "lervag/vimtex",
