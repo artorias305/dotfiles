@@ -5,3 +5,8 @@ configs included:
   - tmux
 
 i am running cachyos with hyprland, the config for those are pre-made and all default
+
+packages being used for notes (i think):
+  - texlive
+  - tree-sitter-cli
+  - pandoc
