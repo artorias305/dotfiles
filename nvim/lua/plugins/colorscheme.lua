@@ -32,4 +32,10 @@ return {
   {
     "craftzdog/solarized-osaka.nvim",
   },
+  {
+    "bluz71/vim-nightfly-guicolors",
+    config = function()
+      vim.g.nightflyTransparent = true
+    end,
+  },
 }
