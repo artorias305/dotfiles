@@ -123,3 +123,5 @@
            (lsp-deferred)
            (company-mode)
            (hs-minor-mode))
+(after! lsp-mode
+        (setq lsp-lens-enable nil))
