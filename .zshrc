@@ -20,4 +20,8 @@ alias g="git"
 alias grep="grep --color=auto"
 alias lg="lazygit"
 
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+
 eval "$(starship init zsh)"
