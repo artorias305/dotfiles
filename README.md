@@ -22,4 +22,6 @@ stow .
 
 ## Uninstall
 
+```bash
 stow -D .
+```
