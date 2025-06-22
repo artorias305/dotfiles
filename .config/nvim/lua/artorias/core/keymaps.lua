@@ -101,3 +101,5 @@ vim.keymap.set("n", "<C-CR>", "m`O<Esc>`")
 vim.keymap.set("n", "<leader>b", function()
 	require("buffer_manager.ui").toggle_quick_menu()
 end, { desc = "Open buffer manager" })
+
+vim.keymap.set("n", "<leader>en", ":Neotree toggle<CR>", { noremap = true, silent = true, desc = "Open neotree"})
