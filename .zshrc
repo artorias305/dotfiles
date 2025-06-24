@@ -19,6 +19,7 @@ alias vim="nvim"
 alias g="git"
 alias grep="grep --color=auto"
 alias lg="lazygit"
+alias cat="bat"
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
