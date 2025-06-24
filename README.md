@@ -20,6 +20,12 @@ cd dotfiles
 stow .
 ```
 
+To install gnome extensions dconf
+
+```bash
+dconf load /org/gnome/shell/extensions/ < dconf.txt
+```
+
 ## Uninstall
 
 ```bash
