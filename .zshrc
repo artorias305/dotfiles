@@ -20,6 +20,9 @@ alias g="git"
 alias grep="grep --color=auto"
 alias lg="lazygit"
 alias cat="bat"
+alias fetch="nerdfetch"
+alias symlink="ln -s"
+alias tree="tree -C"
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
