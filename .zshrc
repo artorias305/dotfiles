@@ -25,5 +25,7 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 
+zstyle ":completion:*" matcher-list "m:{a-zA-Z}={A-Za-z}"
+
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
