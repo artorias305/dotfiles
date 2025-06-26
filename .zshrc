@@ -3,7 +3,11 @@ setopt correct
 setopt histignoredups
 setopt share_history
 
+export ZSH="$HOME/.oh-my-zsh/"
+
 export PATH="$HOME/.cargo/bin:$HOME/bin:/usr/local/bin:$HOME/.local/bin:/usr/bin:/bin:$PATH"
+
+ZSH_THEME="robbyrussell"
 
 autoload -Uz compinit
 compinit
@@ -28,7 +32,9 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 
-zstyle ":completion:*" matcher-list "m:{a-zA-Z}={A-Za-z}"
+CASE_SENSITIVE="false"
+
+source $ZSH/oh-my-zsh.sh
 
 # eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
