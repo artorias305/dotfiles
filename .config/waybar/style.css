@@ -1,14 +1,79 @@
 @import "rose-pine.css";
 
 * {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 14px;
+    border: none;
     background: @base;
-    border: 1px solid @overlay;
+    color: @text;
+    padding: 0 10px;
+    margin: 0;
 }
 
+/* Module containers */
+#window,
+#workspaces,
+#clock,
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio,
+#battery,
+#tray,
+#custom-launcher {
+    background: @surface;
+    border-radius: 8px;
+    margin: 2px 4px;
+    padding: 4px 10px;
+}
+
+/* Colors per module */
 #memory {
     color: @foam;
 }
 
 #temperature {
     color: @rose;
+}
+
+#cpu {
+    color: @pine;
+}
+
+#network {
+    color: @iris;
+}
+
+#pulseaudio {
+    color: @gold;
+}
+
+#battery {
+    color: @love;
+}
+
+/* Workspace styling */
+#workspaces button {
+    background: transparent;
+    border: none;
+    padding: 4px 6px;
+    color: @muted;
+}
+
+#workspaces button.active {
+    color: @text;
+    background: @highlightHigh;
+    border-radius: 6px;
+}
+
+#workspaces button:hover {
+    background: @highlightMed;
+    color: @text;
+}
+
+/* Launcher */
+#custom-launcher {
+    font-size: 18px;
+    color: @iris;
 }
