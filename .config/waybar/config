@@ -5,7 +5,8 @@
   "modules-left": ["custom/launcher", "hyprland/workspaces"],
   "modules-center": ["clock"],
   "modules-right": [
-    "cpu", "memory", "temperature", "network", "pulseaudio", "battery", "tray"
+    "cpu", "memory", "temperature", "network", "pulseaudio", "battery", "tray",
+    "custom/logout"
   ],
 
   // Custom launcher
@@ -67,5 +68,13 @@
   "tray": {
     "icon-size": 18,
     "spacing": 6
+  },
+
+  "custom/logout": {
+      "format": "⏻",
+      "tooltip": true,
+      "tooltip-format": "Power Menu",
+      "on-click": "~/.config/waybar/scripts/powermenu.sh",
+      "interval": 3600
   }
 }

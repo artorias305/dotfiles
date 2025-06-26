@@ -77,3 +77,16 @@
     font-size: 18px;
     color: @iris;
 }
+
+#custom-logout {
+    color: @love;
+    font-size: 16px;
+    margin-right: 10px;
+    background: @highlightMed;
+    border-radius: 6px;
+}
+
+#custom-logout:hover {
+    background: @highlightHigh;
+    color: @text;
+}
