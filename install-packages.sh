@@ -32,6 +32,7 @@ packages=(
 )
 
 echo "Starting system setup..."
+set -euo pipefail
 
 echo "Updating system..."
 sudo pacman -Syu --noconfirm
@@ -49,13 +50,45 @@ else
     echo "yay is already installed"
 fi
 
-for package in ${packages[@]}; do
-    yay -S --noconfirm ${package}
-done
+install_if_missing() {
+    for pkg in "$@"; do
+        if ! pacman -Qi "$pkg" &>/dev/null && ! yay -Qi "$pkg" &>/dev/null; then
+            echo "Installing $pkg..."
+            yay -S --noconfirm "$pkg"
+        else
+            echo "$pkg" is already installed
+        fi
+    done
+}
 
-echo "Setting up docker"
+cargo install eza
+cargo install starship
+cargo install zoxide
 
-sudo systemctl start docker
-sudo systemctl enable docker
-sudo usermod -aG docker $USER
-newgrp docker
+# for package in ${packages[@]}; do
+#     yay -S --noconfirm ${package}
+# done
+
+install_if_missing "${packages[@]}"
+
+read -p "Do you want to install preconfigured dotfiles? (y/n): " choice
+if [[ "$choice" =~ ^[Yy]$ ]]; then
+    if [ -d "$HOME/dotfiles" ]; then
+        cd "$HOME/dotfiles"
+        stow .
+    else
+        echo "Dotfiles directory not found in \$HOME."
+    fi
+fi
+
+if [[ $SHELL != *zsh ]]; then
+    chsh -s "$(which zsh)"
+    echo "Default shell changed to zsh. Re-login to apply."
+fi
+
+echo "Setting up docker..."
+sudo systemctl enable --now docker
+sudo usermod -aG docker "$USER"
+
+
+echo "Setup complete. Consider rebooting your PC."

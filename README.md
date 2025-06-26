@@ -1,3 +1,5 @@
+> The install packages script is WIP, use it at your own risk.
+
 These are my personal dotfiles.
 
 ## Prerequisites
@@ -31,3 +33,10 @@ dconf load /org/gnome/shell/extensions/ < dconf.txt
 ```bash
 stow -D .
 ```
+
+## Apps i use
+
+- Web Browser: Librewolf
+- Terminal: kitty
+- Window Manager: Hyprland
+- Code Editor: Neovim
