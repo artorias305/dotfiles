@@ -1,5 +1,4 @@
 setopt autocd
-setopt correct
 setopt histignoredups
 setopt share_history
 
