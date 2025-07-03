@@ -26,7 +26,7 @@ theme = catppuccin-mocha
 cursor-style = block
 shell-integration-features = no-cursor
 window-padding-x = 20
-opacity = 50
+background-opacity = 0.85
 #
 # # Spacing around the equals sign does not matter.
 # # All of these are identical:
