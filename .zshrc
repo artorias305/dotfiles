@@ -2,7 +2,7 @@ setopt autocd
 setopt histignoredups
 setopt share_history
 
-export PATH="$HOME/.cargo/bin:$HOME/bin:/usr/local/bin:$HOME/.local/bin:/usr/bin:/bin:$HOME/.config/emacs/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$HOME/bin:/usr/local/bin:$HOME/.local/bin:/usr/bin:/bin:$PATH"
 
 autoload -Uz compinit
 compinit
